@@ -1,7 +1,7 @@
 while True:
     
     n = int(input("How much numbers want enter? "))
-    if n < 4 or n == 1:
+    if n < 4 or n%2 == 1 or n == 1:
         print("Please enter four or more number and only odd times!")
         continue
     else:
