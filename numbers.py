@@ -37,4 +37,13 @@ while j <= len(num):
 
     j += 1
 
-print(mksort)
+maximum = []
+ind = 1
+
+while ind < len(mksort):
+    sxvaoba = mksort[ind] - mksort[ind - 1]
+    maximum.append(sxvaoba)
+    ind += 1
+ 
+
+print(f"Maximum difference between two numbers: {max(maximum)}")
